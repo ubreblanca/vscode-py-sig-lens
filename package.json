@@ -4,6 +4,7 @@
   "description": "Display Haskell-style type signatures above Python functions",
   "version": "0.0.1",
   "publisher": "ubreblanca",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/ubreblanca/vscode-py-sig-lens"
