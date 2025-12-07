@@ -1,23 +1,34 @@
 {
   "name": "python-signature-lens",
   "displayName": "Python Signature Lens",
-  "description": "",
+  "description": "Display Haskell-style type signatures above Python functions",
   "version": "0.0.1",
+  "publisher": "ubreblanca",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ubreblanca/vscode-py-sig-lens"
+  },
   "engines": {
     "vscode": "^1.106.1"
   },
   "categories": [
-    "Other"
+    "Programming Languages"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onLanguage:python"
+  ],
   "main": "./out/extension.js",
   "contributes": {
-    "commands": [
-      {
-        "command": "python-signature-lens.helloWorld",
-        "title": "Hello World"
+    "configuration": {
+      "title": "Python Signature Lens",
+      "properties": {
+        "pythonSignatureLens.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable Haskell-style signatures above Python functions"
+        }
       }
-    ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
