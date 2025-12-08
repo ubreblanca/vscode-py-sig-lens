@@ -2,7 +2,7 @@
   "name": "python-signature-lens",
   "displayName": "Python Signature Lens",
   "description": "Display Haskell-style type signatures above Python functions",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "ubreblanca",
   "license": "MIT",
   "repository": {
@@ -27,6 +27,16 @@
           "type": "boolean",
           "default": true,
           "description": "Enable Haskell-style signatures above Python functions"
+        },
+        "pythonSignatureLens.showFunctionName": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show function name in signature (e.g., 'fn :: A -> A' vs 'A -> A')"
+        },
+        "pythonSignatureLens.haskellStyleApplication": {
+          "type": "boolean",
+          "default": false,
+          "description": "Use Haskell-style type application (e.g., 'Iterable A' instead of 'Iterable[A]')"
         }
       }
     }

@@ -20,6 +20,7 @@ Download here: https://marketplace.visualstudio.com/items?itemName=ubreblanca.py
 | `Optional[T]` | `T?` |
 | `T \| None` | `T?` |
 | `None \| T` | `T?` |
+| `Union[A, B]` | `A \| B` |
 | `list[T]` | `[T]` |
 | `dict[K, V]` | `{K: V}` |
 | `set[T]` | `{T}` |
@@ -35,4 +36,16 @@ Download here: https://marketplace.visualstudio.com/items?itemName=ubreblanca.py
 | Setting | Description | Default |
 |---------|-------------|---------|
 | `pythonSignatureLens.enabled` | Enable/disable signatures | `true` |
+| `pythonSignatureLens.showFunctionName` | Show function name in signature | `true` |
+| `pythonSignatureLens.haskellStyleApplication` | Use Haskell-style type application | `false` |
+
+### Haskell-Style Type Application
+
+When `haskellStyleApplication` is enabled, generic types use space-delimited syntax:
+
+| Python | Default | With `haskellStyleApplication` |
+|--------|---------|-------------------------------|
+| `Iterable[A]` | `Iterable[A]` | `Iterable A` |
+| `Mapping[K, V]` | `Mapping[K, V]` | `Mapping K V` |
+| `Iterator[Sequence[A]]` | `Iterator[Sequence[A]]` | `Iterator (Sequence A)` |
 
