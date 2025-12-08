@@ -4,6 +4,8 @@
 
 Display Haskell-style type signatures above Python functions using CodeLens.
 
+Download here: https://marketplace.visualstudio.com/items?itemName=ubreblanca.python-signature-lens
+
 ## Features
 
 - Curried function signatures displayed above Python function definitions
