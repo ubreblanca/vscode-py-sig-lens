@@ -33,3 +33,4 @@ Display Haskell-style type signatures above Python functions using CodeLens.
 | Setting | Description | Default |
 |---------|-------------|---------|
 | `pythonSignatureLens.enabled` | Enable/disable signatures | `true` |
+
