@@ -1,3 +1,5 @@
+![Screenshot](screenshot.png)
+
 # Python Signature Lens
 
 Display Haskell-style type signatures above Python functions using CodeLens.
@@ -8,28 +10,6 @@ Display Haskell-style type signatures above Python functions using CodeLens.
 - Supports generic type parameters and bounded constraints
 - Handles class methods with inherited type parameters
 - Works with async functions and multi-line signatures
-
-## Examples
-
-The comments are shown above the function definitions using CodeLens.
-
-```python
-# add :: int -> int -> int
-def add(x: int, y: int) -> int:
-    return x + y
-
-# find :: (T: Comparable) => [T] -> T -> int?
-def find[T: Comparable](items: list[T], target: T) -> Optional[int]:
-    ...
-
-# process :: {str: [int]} -> (int, str)
-def process(data: dict[str, list[int]]) -> tuple[int, str]:
-    ...
-
-# apply :: [int] -> (int -> str) -> [str]
-def apply(items: list[int], fn: Callable[[int], str]) -> list[str]:
-    ...
-```
 
 ## Type Transformations
 
